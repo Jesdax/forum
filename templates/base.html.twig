@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forum 2.0</title>
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/materialize.css">
+        <script src="../assets/js/jQuery.js"></script>
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="../assets/img/pic00.png" alt="Logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Section design</a></li>
+                    <li><a href="#">Section développement web</a></li>
+                    <li><a href="#">Section marketing</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="mobile-demo" class="sidenav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Section design</a></li>
+            <li><a href="#">Section développement web</a></li>
+            <li><a href="#">Section marketing</a></li>
+        </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <script src="../assets/js/materialize.js"></script>
+    <script src="../assets/js/main.js"></script>
     </body>
 </html>
