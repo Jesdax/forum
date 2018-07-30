@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Forum 2.0</title>
-        <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="stylesheet" href="../assets/css/materialize.css">
-        <script src="../assets/js/jQuery.js"></script>
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/materialize.css') }}">
+        <script src="{{ asset('js/jQuery.js') }}"></script>
     </head>
     <body>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="../assets/img/pic00.png" alt="Logo"></a>
+                <a href="#" class="brand-logo"><img src="{{ asset('img/pic00.png') }}" alt="Logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#">Accueil</a></li>
@@ -33,7 +33,7 @@
             $('.sidenav').sidenav();
         });
     </script>
-    <script src="../assets/js/materialize.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <script src="{{ asset('js/materialize.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>
